@@ -5,7 +5,7 @@ body {
   font-family: 'Hind', Arial, Helvetica, sans-serif;
 }
 
-.app {
+.App {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
