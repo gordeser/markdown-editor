@@ -1,5 +1,6 @@
 import './App.css';
 import {useState} from "react";
+import ReactMarkdown from "react-markdown";
 
 function App() {
     const [markdown, setMarkdown] = useState('# hello world')
@@ -10,8 +11,8 @@ function App() {
 
     return (
         <div className="App">
-            <textarea onChange={handleOnChange} value={markdown}/>
-            <div className="preview">{markdown}</div>
+            <textarea onChange={handleOnChange} value={markdown} />
+            <ReactMarkdown className="preview" children={markdown}/>
         </div>
     );
 }
